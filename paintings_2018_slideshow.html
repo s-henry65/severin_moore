@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Severin Moore Painting Slide Show</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125111366-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+    function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+    gtag('config', 'UA-125111366-1');
+	</script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_pitcher.jpg">
+					<div class="text">'Pitcher in Abstract' &#8226; enamel/ acrylic/ wood panel &#8226; 5 x 5 ft.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_blue_x.jpg">
+					<div class="text">'Untitled' &#8226; enamel/ acrylic/ wood panel &#8226; 5 x 5 ft.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_orange_sun.jpg">
+					<div class="text">'Untitled' &#8226; enamel/ acrylic/ wood panel &#8226; 5 x 5 ft.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_rectangle.jpg">
+					<div class="text">'Untitled' &#8226; enamel/ acrylic/ wood panel &#8226; 5 x 5 ft.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_room_painting.jpg">
+					<div class="text">'Untitled' &#8226; enamel/ acrylic/ wood panel &#8226; 5 x 7 ft.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_arch.jpg">
+					<div class="text">'Untitled' &#8226; enamel/ acrylic/ wood panel &#8226; 5 x 7 ft.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2018/slide_sq_abstract.jpg">
+					<div class="text">'Shadow of a Season' &#8226; enamel/ acrylic/ gouache/ canvas &#8226; 24 x 24 in.</div>
+				</div>
+
+				<div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+					<span class="dot" onclick="currentSlide(7)"></span>
+				</div>
+
+				<div><a href="paintings_2018.html">Return</a></div>
+
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {
+							slideIndex = 1
+						}
+						if (n < 1) {
+							slideIndex = slides.length
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+						dots[slideIndex - 1].className += " active";
+					}
+				</script>
+
+</body>
+
+</html>

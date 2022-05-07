@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Severin Moore Painting Slide Show</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125111366-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+    function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+    gtag('config', 'UA-125111366-1');
+	</script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_couple.jpg">
+					<div class="text">'Lovers Embrace in the Night (Summer in the City)' &#8226; acrylic/ oil pastel/ wood &#8226; 36 x 36 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_lady_arm.jpg">
+					<div class="text">'Moon on Earth' &#8226; acrylic/ gouache/ canvas &#8226; 18 x 24 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_brickwall_profile.jpg">
+					<div class="text">'White Witch' &#8226; enamel/ acrylic/ canvas &#8226; 12 x 16 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_red_stripes.jpg">
+					<div class="text">'Memory of a Landscape from a Dream' &#8226; acrylic/ gouache/ canvas &#8226; 24 x 36 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_brickwall_pinkworm.jpg">
+					<div class="text">'Fantasy Wall' &#8226; acrylic/ canvas &#8226; 12 x 12 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_color_worms.jpg">
+					<div class="text">'Abstract Color Palette' &#8226; acrylic/ pearl mica/ wood &#8226; 12 x 14 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_four_square.jpg">
+					<div class="text">'Four Square' &#8226; acrylic/ gouache/ canvas &#8226; 12 x 12 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_leopard_shapes.jpg">
+					<div class="text">'Safari of the Mind' &#8226; enamel/ acrylic/ canvas &#8226; 14 x 14 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_road_arc.jpg">
+					<div class="text">'Streets of Confusion' &#8226; acrylic/ gouache/ pearl mica/ canvas &#8226; 12 x 12 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_brickwall_palms.jpg">
+					<div class="text">'Palm Strip' &#8226; acrylic/ canvas &#8226; 18 x 24 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_tryp1.jpg">
+					<div class="text">'Untitled Abstract 1' &#8226; acrylic/ gouache/ canvas &#8226; 12 x 12 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_tryp2.jpg">
+					<div class="text">'Untitled Abstract 2' &#8226; acrylic/ gouache/ canvas &#8226; 12 x 12 in.</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./ssm_art/paintings/2017/slide_tryp3.jpg">
+					<div class="text">'Untitled Abstract 3' &#8226; acrylic/ gouache/ canvas &#8226; 12 x 12 in.</div>
+				</div>
+
+				<div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+					<span class="dot" onclick="currentSlide(7)"></span>
+					<span class="dot" onclick="currentSlide(8)"></span>
+					<span class="dot" onclick="currentSlide(9)"></span>
+					<span class="dot" onclick="currentSlide(10)"></span>
+					<span class="dot" onclick="currentSlide(11)"></span>
+					<span class="dot" onclick="currentSlide(12)"></span>
+					<span class="dot" onclick="currentSlide(13)"></span>
+
+				</div>
+
+				<div><a href="paintings_2017.html">Return</a></div>
+
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						if (n > slides.length) {
+							slideIndex = 1
+						}
+						if (n < 1) {
+							slideIndex = slides.length
+						}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex - 1].style.display = "block";
+						dots[slideIndex - 1].className += " active";
+					}
+				</script>
+
+</body>
+
+</html>
